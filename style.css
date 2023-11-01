@@ -1,0 +1,27 @@
+body {
+    font-family: Georgia, serif;
+    background-color: white;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Righteous', sans-serif;
+}
+
+nav {
+    background-color: salmon;
+}
+
+nav a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Add more styles as needed */
