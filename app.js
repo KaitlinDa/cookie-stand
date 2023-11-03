@@ -100,3 +100,29 @@ for(let i = 0; i < stores.length; i++) {
 }
 
 createTableFooter(table, stores);
+
+// Take a look at this, having issues
+
+function clearTableFooter(table) {
+  table.deleteRow(-1);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+const form = document.getElementById('new-store-form');
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); 
+
+
+  const newStore = new Store(name, minCust, maxCust, avgCookie);
+  newStore.calculateHourlySales();
+  newStore.render(table);
+
+  stores.push(newStore);
+
+  clearTableFooter(table);
+
+  createTableFooter(table, stores);
+
+  form.reset();
+});
+});
