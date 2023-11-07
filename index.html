@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 
-<!-- Added new code, isn't working -->
 <table id="sales-table"></table> 
 
 <body>
@@ -23,6 +22,26 @@
     </nav>
 
     <img src="salmon.png" alt="Salmon Cookie Image" id="salmon-image">
+
+    <form id="new-store-form">
+        <fieldset>
+          <legend>Add New Cookie Stand Location</legend>
+      
+          <label for="name">Location Name:</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="minCust">Minimum Customers per Hour:</label>
+          <input type="number" id="minCust" name="minCust" required>
+      
+          <label for="maxCust">Maximum Customers per Hour:</label>
+          <input type="number" id="maxCust" name="maxCust" required>
+      
+          <label for="avgCookie">Average Cookies per Customer:</label>
+          <input type="number" id="avgCookie" name="avgCookie" step="0.1" required>
+      
+          <button type="submit">Add Location</button>
+        </fieldset>
+      </form>
 
     <section>
         <h2>Seattle</h2>
@@ -58,26 +77,6 @@
         <p>Contact: 555-555-5555</p>
         <p>Location: Ctra. Huaral-Ñaña, Huaral 15074</p>
     </section>
-
-<form id="new-store-form">
-    <fieldset>
-      <legend>Add New Cookie Stand Location</legend>
-  
-      <label for="name">Location Name:</label>
-      <input type="text" id="name" name="name" required>
-  
-      <label for="minCust">Minimum Customers per Hour:</label>
-      <input type="number" id="minCust" name="minCust" required>
-  
-      <label for="maxCust">Maximum Customers per Hour:</label>
-      <input type="number" id="maxCust" name="maxCust" required>
-  
-      <label for="avgCookie">Average Cookies per Customer:</label>
-      <input type="number" id="avgCookie" name="avgCookie" step="0.1" required>
-  
-      <button type="submit">Add Location</button>
-    </fieldset>
-  </form>
 
 </body>
 
